@@ -1,2 +1,27 @@
 
 /* Your CSS Code here. */
+#holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* set a fixed height to prevent the items from overflowing */
+}
+
+#holder > * {
+  flex: 0 0 auto; /* don't allow items to shrink or grow */
+  margin: 5px; /* add some margin between the items */
+}
+
+/* styles for the items */
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
